@@ -1,0 +1,124 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo i {
+  font-size: 48px;
+  color: #3498db; /* Adjust icon color as needed */
+}
+
+.logo h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+label i {
+  margin-right: 10px;
+}
+
+input, select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo i {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+main h1 {
+  margin-bottom: 20px;
+}
+

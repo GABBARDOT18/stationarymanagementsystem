@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management - Stationary Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-pen"></i>
+      <h2>Stationary Management System</h2>
+    </div>
+    <nav>
+<ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="order.html">Orders</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Inventory Management</h1>
+    
+    <!-- Button to add new item -->
+    <button id="addItemBtn"><i class="fas fa-plus"></i> Add New Item</button>
+    
+    <!-- Table to display inventory -->
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>Item ID</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Stock Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample data (replace with actual data from backend) -->
+        <tr>
+          <td>1</td>
+          <td>Pens</td>
+          <td>Blue pens, pack of 10</td>
+          <td>150</td>
+          <td>
+            <button class="editBtn"><i class="fas fa-edit"></i> Edit</button>
+            <button class="deleteBtn"><i class="fas fa-trash-alt"></i> Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Notepads</td>
+          <td>A5 size, ruled sheets</td>
+          <td>100</td>
+          <td>
+            <button class="editBtn"><i class="fas fa-edit"></i> Edit</button>
+            <button class="deleteBtn"><i class="fas fa-trash-alt"></i> Delete</button>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </main>
+  
+  <!-- Modal for adding/editing item -->
+  <div id="itemModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Add New Item</h2>
+      <form id="itemForm">
+        <input type="hidden" id="itemId">
+        <div class="form-group">
+          <label for="itemName">Name</label>
+          <input type="text" id="itemName" name="itemName" required>
+        </div>
+        <div class="form-group">
+          <label for="itemDescription">Description</label>
+          <textarea id="itemDescription" name="itemDescription" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="itemQuantity">Stock Quantity</label>
+          <input type="number" id="itemQuantity" name="itemQuantity" required>
+        </div>
+        <button type="submit" id="saveItemBtn">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="inventory.js"></script>
+</body>
+</html>
+
